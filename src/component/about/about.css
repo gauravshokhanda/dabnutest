@@ -1,0 +1,117 @@
+/* about.css */
+
+/* Common styles for container and box */
+.container,
+.box {
+  border-radius: 20px;
+  background: #007FFF;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  height: 80vh;
+  margin: 8%;
+}
+
+.box {
+  flex: 1;
+  margin: 5px;
+}
+
+.white-card {
+  background: white;
+  padding: 20px;
+  height: 90%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  /* Add some spacing between label and input */
+  .input-container input,
+  .input-container textarea {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #95CAFF; /* Update the border style */
+    border-radius: 5px; /* Add border radius */
+    margin-top: 5px;
+  }
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.input-container input:focus,
+.input-container textarea:focus {
+  border: 2px solid #007FFF;
+  color: #333333CC;
+  background-color: white;
+}
+
+button {
+    display: flex;
+    width: 50%;
+    height: 50px;  
+    justify-content: center;
+    align-items: center;
+    border-radius: 65px;
+    border-color: transparent;
+    background: #007FFF;
+  cursor: pointer;
+}
+
+button h5{
+    color: #FFF;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+/* Responsive Styles */
+
+/* For smaller screens, adjust the margin and padding */
+@media (max-width: 768px) {
+  .container {
+    margin: 4%;
+  }
+  
+  .box {
+    padding: 10px;
+  }
+}
+
+/* For even smaller screens, make the container stack vertically */
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .box {
+    flex: none;
+  }
+}
+
+/* For larger screens, increase padding and margins */
+@media (min-width: 1200px) {
+  .container {
+    margin: 10%;
+    padding: 40px;
+  }
+  
+  .box {
+    margin: 10px;
+    padding: 30px;
+  }
+}
