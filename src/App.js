@@ -23,8 +23,8 @@ function App() {
         <div class="container-right">
           <HeroRight />
         </div>
-        <Hero2 />
       </div>
+      <Hero2 />
       <FeaturePage />
       <About />
       <Footer />
